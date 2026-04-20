@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>親睦会申込フォーム</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      /* 背景色を少しグレーにするとフォームが浮き立ってモダンに見えます */
+      background-color: #f5f5f5;
+    }
+    .header {
+      width: 100%;
+      height: 200px;
+      background-image: url('images/header.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff; /* コンテナを白くして清潔感を出す */
+    }
+
+    /* iframe自体の設定 */
+    iframe {
+      width: 100%;
+      /* スマホでのスクロールを滑らかにする設定 */
+      -webkit-overflow-scrolling: touch;
+    }
+
+    /* スマホ（横幅768px以下）用の調整 */
+    @media (max-width: 768px) {
+      .header {
+        height: 120px; /* スマホではヘッダーを少し低く */
+      }
+      .container {
+        padding: 0; /* スマホでは左右の余白をゼロにしてフォーム幅を最大化 */
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="header"></div>
+
+<div class="container">
+  <iframe 
+    src="https://script.google.com/macros/s/AKfycbzAD2vsfDLr8VosskmDkNQncG2kvzYG3tqjcFs9zEXXHDGtKNzre4h85qA8Q7haJ0SH/exec"
+    width="100%" 
+    height="1800" 
+    style="border:none; display:block;"
+    loading="lazy">
+  </iframe>
+</div>
+
+</body>
+</html>
